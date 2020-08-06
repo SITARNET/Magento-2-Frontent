@@ -4,7 +4,7 @@ THEME_PATH="select theme_path from theme where theme_id in ($DEFAULT_THEME_ID);"
 VENDOR_THEME=`bin/n98-magerun2 db:query "$THEME_PATH" | sed -n 2p | cut -d$'\r' -f1`
 THEME=`echo $VENDOR_THEME | cut -d'/' -f2`
 
-# Generate local-theme.js for custom theme
+# Generate local-themes.js for custom theme
 read -d '' GEN_THEME_JS << EOM
 var fs = require('fs');
 var util = require('util');

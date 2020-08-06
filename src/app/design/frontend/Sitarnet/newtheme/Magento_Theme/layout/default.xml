@@ -3,7 +3,10 @@
     <body>
         <referenceContainer name="header-wrapper">
             <container name="test2" htmlTag="div">
-                <block name="test3" template="Magento_Theme::index.phtml" after="-"/>
+                <block name="test3" template="Magento_Theme::index.phtml" after="-">
+                    <block name="test4" as='test5' template="Magento_Theme::test.phtml" />
+                    <block name="test6" template="Magento_Theme::test.phtml" />
+                </block>
             </container>
         </referenceContainer>
         <referenceContainer name="footer">
