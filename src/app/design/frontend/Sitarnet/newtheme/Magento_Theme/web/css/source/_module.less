@@ -65,7 +65,6 @@
 & when (@media-common = true) {
     body {
         .lib-css(background-color, @page__background-color);
-        background-color: #0fa7ff;
     }
 
     .page-wrapper {
@@ -725,7 +724,7 @@
                 li {
                     background: transparent;
                     border: none;
-                    font-size: 14px;
+                    font-size: 18px;
                     margin: 0 0 8px;
                     padding: 0;
                 }
@@ -733,8 +732,101 @@
                 a,
                 strong {
                     display: inline;
+                    color: red;
                 }
             }
         }
     }
+}
+
+//Day conteiner//
+
+.day-container {
+    background-image: url("../images/hero-image.webp");
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 350px;
+    max-height: 450px;
+    min-width: 1250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.day-percent {
+    color: #fff;
+    font-size: 46px;
+    line-height: 70px;
+    font-weight: 700;
+    text-shadow: 0 0 60px #000000, 0 0 20px #000000;
+    font-family: 'Roboto', 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    align-self: center;
+}
+.cyber-monday {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    color: #fff;
+    font-size: 35px;
+    line-height: 0;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #000000, 0 0 20px #000000;
+    font-family: Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+    align-self: center;
+}
+.free-text {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+    align-self: center;
+    line-height: 20px;
+    text-shadow: 0 0 10px #000000, 0 0 20px #000000;
+}
+.free-text span {
+    font-weight: bold;
+    color: #f1c761;
+}
+.button-day-sale {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #fff;
+    color: #252c26;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+    width: 80px;
+    align-self: center;
+    border: 0;
+    line-height: inherit;
+    cursor: pointer;
+    border-radius: 0;
+}
+.button-day-sale a {
+    background-color: #ddd;
+    transition: background-color 0.4s ease;
+}
+.button-day-sale a:hover {
+    background-color: #ddd;
+    transition: background-color 0.4s ease;
+}
+.leap-banner-day {
+    background-color: #2e2b32;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    color: #eaeaea;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: -20px;
 }
