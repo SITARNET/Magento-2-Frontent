@@ -1,0 +1,130 @@
+//
+// Common
+//
+
+& when (@media-common = true) {
+    body {
+        background-color: #fff;
+    }
+}
+
+//Day container//
+
+.day-container {
+    background-image: url("../images/hero-image.webp");
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 350px;
+    max-height: 450px;
+    min-width: 1250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.day-percent {
+    color: #fff;
+    font-size: 46px;
+    line-height: 70px;
+    font-weight: 700;
+    text-shadow: 0 0 60px #000000, 0 0 20px #000000;
+    font-family: 'Roboto', 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    align-self: center;
+}
+.cyber-monday {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    color: #fff;
+    font-size: 35px;
+    line-height: 0;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #000000, 0 0 20px #000000;
+    font-family: Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+    align-self: center;
+}
+.free-text {
+    span {
+        font-weight: bold;
+        color: #f1c761;
+    }
+    padding-top: 5px;
+    padding-bottom: 15px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+    align-self: center;
+    line-height: 20px;
+    text-shadow: 0 0 10px #000000, 0 0 20px #000000;
+}
+
+.button-day-sale {
+    a {
+        &:hover {
+            background-color: #bababa;
+            transition: background-color 0.4s ease;
+            text-decoration: none;
+            color: #000;
+        }
+        background-color: #fff;
+        transition: background-color 0.4s ease;
+        text-decoration: none;
+        padding: 5px 10px;
+        color: #000;
+    }
+    margin-top: 15px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+    align-self: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.leap-banner-day {
+    background-color: #2e2b32;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    color: #eaeaea;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: -20px;
+}
+
+//Day container/
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .cms-page-view .page-main {
+        padding-top: 0;
+        position: relative;
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    html,
+    body {
+        height: 100%; // Stretch screen area for sticky footer
+    }
+}
+
+
