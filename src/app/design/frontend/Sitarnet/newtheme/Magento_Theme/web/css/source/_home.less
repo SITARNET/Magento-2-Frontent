@@ -11,7 +11,9 @@
 //Day container//
 
 .day-container {
-    background-image: url("../images/hero-image.webp");
+    //background-image: url("../images/hero-image.webp");
+    background-image: url("@{url}");
+    .lib-url('images/hero-image.webp', 'Magento_Theme');
     background-size: cover;
     position: relative;
     background-position: center;
@@ -20,10 +22,11 @@
     flex-direction: column;
     height: 350px;
     max-height: 450px;
-    min-width: 1250px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: -50px;
 }
+
 .day-percent {
     color: #fff;
     font-size: 46px;
@@ -91,19 +94,131 @@
     cursor: pointer;
 }
 
+//Day container//
+
+//Leap banner day//
+
 .leap-banner-day {
+    position: relative;
+    display: flex;
+    justify-content: center;
     background-color: #2e2b32;
-    width: 100%;
-    box-sizing: border-box;
     padding: 10px;
     color: #eaeaea;
     text-align: center;
     font-weight: 400;
     font-size: 14px;
-    margin-bottom: -20px;
+    margin-bottom: -50px;
 }
 
-//Day container/
+.strap-image-icon{
+    display: block;
+    background-image: url("@{url}");
+    .lib-url('images/tis-logo2.png', 'Magento_Theme');
+    background-size: cover;
+    background-position: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 18px;
+    height: auto;
+    max-width: 100%;
+}
+
+//Leap banner day//
+
+//Features Irish//
+
+.features {
+    padding: 20px 0 10px;
+    margin-bottom: -50px;
+}
+
+.features-inner {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    padding: 10px 0;
+}
+
+.features-item {
+    display: flex;
+    padding: 10px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+
+    &-images {
+        padding-right: 10px;
+    }
+
+    &-content-title {
+        font-weight: 700;
+    }
+
+    &-content-text {
+        font-size: 14px;
+    }
+}
+
+//Features Irish//
+
+//Categories Irish//
+
+.categories-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+    padding: 10px;
+
+    .categories-item {
+        display: flex;
+        flex: 1 1 auto;
+        margin: 5px 5px;
+        width: 390px;
+        min-width: 280px;
+        max-height: 480px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &-content {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+
+            button {
+                position: absolute;
+                text-transform: uppercase;
+                font-weight: 700;
+                bottom: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .overlay {
+            box-shadow: none;
+            background: rgba(116, 118, 120, .5);
+            color: #fff;
+            border: 1px solid #e0e1dd;
+            padding: 11px 20px;
+        }
+    }
+}
+
+//Categories Irish//
+
 
 //
 //  Mobile
