@@ -21,9 +21,10 @@
         flex-direction: column;
         height: 350px;
         max-height: 450px;
-        margin-right: auto;
-        margin-left: auto;
         margin-bottom: -50px;
+        width: 100vw;
+        margin-left: -50vw;
+        left: 50%;
     }
 
     .day-percent {
@@ -107,7 +108,10 @@
         text-align: center;
         font-weight: 400;
         font-size: 14px;
-        margin-bottom: -50px;
+        margin-bottom: -40px;
+        width: 100vw;
+        margin-left: -50vw;
+        left: 50%;
     }
 
     .strap-image-icon{
@@ -129,8 +133,7 @@
     //Features Irish//
 
     .features {
-        padding: 20px 0 10px;
-        margin-bottom: -50px;
+        margin-bottom: -40px;
     }
 
     .features-inner {
@@ -164,12 +167,16 @@
 
     //Categories Irish//
 
+    .categories {
+        margin-bottom: -40px;
+    }
+
     .categories-inner {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 0 -5px;
-        padding: 10px;
+        //padding: 10px;
 
         .categories-item {
             display: flex;
@@ -232,6 +239,7 @@
         display: flex;
         justify-content: flex-end;
         font-family: 'Roboto', sans-serif;
+        margin-bottom: -40px;
     }
 
     .banner-exclusive-text {
@@ -287,6 +295,48 @@
     }
 
     //Banner exclusive//
+
+    //Ship block//
+
+    .ship-container {
+        margin-bottom: 20px;
+    }
+
+    .ship-container-inner {
+        padding: 25px 20px;
+        background-image: url("../images/maps.png");
+        background-position: 50% 50%;
+        background-size: 620px;
+        align-items: center;
+    }
+
+    .ship-container-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ship-header-text {
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        color: #202020;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    .ship-sub-text {
+        color: #333;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    //Ship block//
 
 }
 
