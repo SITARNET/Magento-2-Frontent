@@ -1,18 +1,6 @@
 <?xml version="1.0"?>
 <page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="header-wrapper">
-            <container name="test2" htmlTag="div">
-                <block name="test3" template="Magento_Theme::index.phtml" after="-">
-                    <block name="test4" as='test5' template="Magento_Theme::test.phtml" />
-                    <block name="test6" template="Magento_Theme::test.phtml" />
-                </block>
-            </container>
-        </referenceContainer>
-        <referenceContainer name="footer">
-            <container name="test1" htmlTag="div">
-                <block name="test" template="Magento_Theme::index.phtml" after="-"/>
-            </container>
-        </referenceContainer>
+
     </body>
 </page>
