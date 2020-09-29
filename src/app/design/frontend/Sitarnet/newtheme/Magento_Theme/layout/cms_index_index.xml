@@ -3,17 +3,9 @@
     <body>
         <referenceContainer name="content" >
 
-            <block class="Magento\Cms\Block\Block" name="Top-Irish">
-                <arguments>
-                    <argument name="block_id" xsi:type="string">top-irish</argument>
-                </arguments>
-            </block>
 
-            <block class="Magento\Cms\Block\Block" name="Header-Irish">
-                <arguments>
-                    <argument name="block_id" xsi:type="string">header-irish</argument>
-                </arguments>
-            </block>
+
+
 
         </referenceContainer>
     </body>
