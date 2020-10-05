@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>tis-shopping-icon</title>
+    <defs>
+        <polygon id="path-1" points="35.07 35.24985 35.07 0.18 0.0003 0.18 0.0003 35.24985 35.07 35.24985"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="USP_02">
+            <g id="Group-7">
+                <g id="tis-shopping-icon">
+                    <g id="Group-3" transform="translate(0.000000, 0.570300)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M35.0703,17.71485 C35.0703,27.3996 27.2193,35.24985 17.5353,35.24985 C7.85055,35.24985 0.0003,27.3996 0.0003,17.71485 C0.0003,8.0301 7.85055,0.17985 17.5353,0.17985 C27.2193,0.17985 35.0703,8.0301 35.0703,17.71485" id="Fill-1" fill="#252C26" mask="url(#mask-2)"></path>
+                    </g>
+                    <polygon id="Stroke-4" stroke="#FFFFFF" points="26.01855 26.8719 8.92755 26.8719 11.05155 10.4349 23.89455 10.4349"></polygon>
+                    <polygon id="Stroke-6" stroke="#FFFFFF" points="11.953725 24.17085 13.380225 13.1361 21.565725 13.1361 22.991475 24.17085"></polygon>
+                    <path d="M20.48145,13.136025 L20.48145,8.346525 C20.48145,6.656025 19.13445,5.285025 17.4732,5.285025 C15.8112,5.285025 14.4642,6.656025 14.4642,8.346525 L14.4642,13.136025" id="Stroke-8" stroke="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

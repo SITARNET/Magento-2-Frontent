@@ -1,26 +1,27 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
+        <referenceBlock name="logo" remove="true"/>
+        <referenceBlock name="register-link" remove="true"/>
+        <referenceBlock name="minicart" remove="true"/>
+        <referenceBlock name="top.search" remove="true" />
         <referenceContainer name="content">
-            <block class="Magento\Framework\View\Element\Template"  name="test" template="Magento_Theme::test.phtml">
-                <arguments>
-                    <argument name="css_class" xsi:type="string">items order-links</argument>
-                </arguments>
+            <block name="test" template="Magento_Theme::test.phtml" after="-" />
             <block class="Magento\Framework\View\Element\Html\Link" name="test_link" >
                 <arguments>
-                    <argument name="title" xsi:type="string">link title</argument>
-                    <argument name="href" xsi:type="string">/contact</argument>
-                    <argument name="label" xsi:type="string">Contact</argument>
-                </arguments>
-            </block>
-            <block class="Magento\Framework\View\Element\Html\Link" name="test_link1" >
-                <arguments>
                     <argument name="title" xsi:type="string">link title1</argument>
-                    <argument name="href" xsi:type="string">/contact1</argument>
-                    <argument name="label" xsi:type="string">Contact1</argument>
+                    <argument name="href" xsi:type="string">/delivery-information</argument>
+                    <argument name="label" xsi:type="string">Extended 6 Month Free Returns</argument>
                 </arguments>
             </block>
+            <block class="Magento\Framework\View\Element\Html\Link" name="test_link2" >
+                <arguments>
+                    <argument name="title" xsi:type="string">link title2</argument>
+                    <argument name="href" xsi:type="string">/delivery-information</argument>
+                    <argument name="label" xsi:type="string">US 1-800-707-5037</argument>
+                </arguments>
             </block>
+            <!--<block class="Magento\Framework\View\Element\Template"  name="test" template="Magento_Theme::slider.phtml" />-->
         </referenceContainer>
     </body>
 </page>
