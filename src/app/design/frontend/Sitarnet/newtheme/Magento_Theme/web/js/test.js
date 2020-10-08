@@ -26,9 +26,9 @@ define([
         createSlider: function () {
             $(this.element).slick({
                 dots: true,
-                infinite: false,
+                infinite: true,
                 speed: 300,
-                slidesToShow: 4,
+                slidesToShow: 5,
                 slidesToScroll: 4,
                 responsive: [
                     {

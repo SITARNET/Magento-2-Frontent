@@ -7,6 +7,7 @@
         <referenceBlock name="top.search" remove="true" />
         <referenceContainer name="content">
             <block name="test" template="Magento_Theme::test.phtml" after="-" />
+            <block name="test2" template="Magento_Theme::test2.phtml" after="-" />
             <block class="Magento\Framework\View\Element\Html\Link" name="test_link" >
                 <arguments>
                     <argument name="title" xsi:type="string">link title1</argument>
