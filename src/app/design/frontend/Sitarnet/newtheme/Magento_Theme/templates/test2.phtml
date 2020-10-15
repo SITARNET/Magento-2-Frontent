@@ -54,7 +54,7 @@
     });
 </script>-->
 
-<div class="content">
+<!--<div class="content">
     Hello World!
 </div>
 
@@ -66,4 +66,43 @@
         "Magento_Theme/js/test2": {"config": {"modalClass": ".test_modal"}}
     }
 }
+</script>-->
+
+<!--<div class="contents" data-bind="scope:'testComponent'">
+    <input type="text" data-bind="value: inputVal">
+    <p data-bind="text: inputVal, visible: isVisible"></p>
+    <button data-bind="click: clickButton" class="test_button">CLICK</button>
+</div>
+
+<script type="text/x-magento-init">
+    {
+    ".contents": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "testComponent": {
+                           "component": "Magento_Theme/js/test2"
+                    }
+                }
+            }
+        }
+    }
+</script>-->
+
+<div class="test" data-bind="scope: 'test2'">
+    <input type="text" data-bind="value: from">
+    <input type="text" data-bind="textInput: from, hasFocus: isSelected">
+</div>
+
+<script type="text/x-magento-init">
+    {
+        ".test": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "test2": {
+                        "component": "Magento_Theme/js/test2"
+                    }
+                }
+            }
+        }
+    }
 </script>

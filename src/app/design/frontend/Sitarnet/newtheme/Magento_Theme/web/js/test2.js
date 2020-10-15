@@ -1,33 +1,62 @@
+// define([
+//     'uiComponent',
+//     'jquery',
+//     'ko'
+// ], function (Component, $, ko) {
+//     'use strict';
+//
+//     return Component.extend({
+//         default: {
+//             inputVal: '',
+//             text: '123',
+//             isVisible: ko.observable(true)
+//         },
+//
+//         initialize: function () {
+//             this._super();
+//         },
+//
+//         initObservable: function () {
+//             this._super().observe(['inputVal', 'text']);
+//             this.isVisible.subscribe(function (val) {
+//                 console.log(val);
+//             });
+//             return this;
+//         },
+//
+//         clickButton: function () {
+//             this.isVisible(!this.isVisible());
+//         }
+//
+//     });
+// });
+
+
 define([
-    'jquery',
-    'Magento_Ui/js/modal/modal'
-], function ($, modal) {
-    'use strict';
+    "uiComponent",
+    "jquery",
+    "ko"
+], function (Component, $, ko) {
+    "use strict"
 
-    $.widget('mage.reviewPopupList', {
-        options: {
-            content: '.content',
-            config: {
-                type: "popup",
-                responsive: true,
-                modalClass: 'review_modal_list',
-                title: 'All reviews',
-                buttons: []
-            }
+    return Component.extend({
+        defaults: {
+            from: ko.observable(''),
+            isSelected: ko.observable(true)
         },
 
-        _create: function () {
-            let self = this;
-            $('body').on('click', this.element, function () {
-                self.showBlock();
-            });
-        },
 
-        showBlock: function () {
-            let content = $(this.options.content)
-            modal(this.options.config, content);
-            content.modal('openModal');
-        }
-    });
-    return $.mage.reviewPopupList;
+        initialize: function () {
+            this._super()
+
+            this.from.subscribe(function (newValue) {
+                console.log(newValue)
+            })
+            this.isSelected.subscribe(function (newValue) {
+                if(newValue == false) {
+                    alert('Magento 2')
+                }
+            })
+        },
+    })
 });
