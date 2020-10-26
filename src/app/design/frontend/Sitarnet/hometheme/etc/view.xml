@@ -3,6 +3,10 @@
     <vars module="Magento_Catalog">
         <var name="gallery">
             <var name="navdir">vertical</var>
+            <var name="allowfullscreen">true</var>
+        </var>
+        <var name="magnifier">
+            <var name="enabled">true</var> <!-- Turn on/off magnifier (true/false) -->
         </var>
     </vars>
 </view>
