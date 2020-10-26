@@ -62,7 +62,7 @@ class XmlFilesTest extends \PHPUnit\Framework\TestCase
      */
     public function testThemeConfigFileExists($themeDir)
     {
-        $this->assertFileExists($themeDir . '/theme.xml');
+        $this->assertFileExists($themeDir . '/view.xml');
     }
 
     /**
@@ -115,7 +115,7 @@ class XmlFilesTest extends \PHPUnit\Framework\TestCase
         /** @var \Magento\Framework\Component\DirSearch $componentDirSearch */
         $componentDirSearch = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()
             ->get(\Magento\Framework\Component\DirSearch::class);
-        $files = $componentDirSearch->collectFiles(ComponentRegistrar::THEME, 'theme.xml');
+        $files = $componentDirSearch->collectFiles(ComponentRegistrar::THEME, 'view.xml');
         foreach ($files as $file) {
             $result[substr($file, strlen(BP))] = [$file];
         }

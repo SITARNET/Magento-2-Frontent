@@ -41,19 +41,18 @@ define([
 
     return Component.extend({
         defaults: {
-            from: ko.observable(''),
+            from: ko.observable('123'),
             isSelected: ko.observable(true)
         },
-
 
         initialize: function () {
             this._super()
 
-            this.from.subscribe(function (newValue) {
-                console.log(newValue)
+            this.from.subscribe(function (Val) {
+                console.log(Val)
             })
-            this.isSelected.subscribe(function (newValue) {
-                if(newValue == false) {
+            this.isSelected.subscribe(function (Val) {
+                if(Val == false) {
                     alert('Magento 2')
                 }
             })

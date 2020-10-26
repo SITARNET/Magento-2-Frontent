@@ -6,7 +6,7 @@
         <referenceBlock name="minicart" remove="true"/>
         <referenceBlock name="top.search" remove="true" />
         <referenceContainer name="content">
-            <block name="test" template="Magento_Theme::test.phtml" after="-" />
+            <!--<block name="test" template="Magento_Theme::test.phtml" after="-" />
             <block name="test2" template="Magento_Theme::test2.phtml" after="-" />
             <block class="Magento\Framework\View\Element\Html\Link" name="test_link" >
                 <arguments>
@@ -22,7 +22,7 @@
                     <argument name="label" xsi:type="string">US 1-800-707-5037</argument>
                 </arguments>
             </block>
-            <!--<block class="Magento\Framework\View\Element\Template"  name="test" template="Magento_Theme::slider.phtml" />-->
+            <block class="Magento\Framework\View\Element\Template"  name="test" template="Magento_Theme::slider.phtml" />-->
         </referenceContainer>
     </body>
 </page>
