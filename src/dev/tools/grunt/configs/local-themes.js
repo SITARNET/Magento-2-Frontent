@@ -21,7 +21,7 @@
 module.exports = {
     sitarnet: {
         area: 'frontend',
-        name: 'Sitarnet/newtheme',
+        name: 'Sitarnet/hometheme',
         locale: 'en_US',
         files: [
             'css/styles-m',
@@ -29,4 +29,6 @@ module.exports = {
         ],
         dsl: 'less'
     },
+
+
 };

@@ -2,11 +2,11 @@
 <view xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/view.xsd">
     <vars module="Magento_Catalog">
         <var name="gallery">
-            <var name="navdir">vertical</var>
-            <var name="allowfullscreen">true</var>
+            <var name="navdir">vertical</var> <!--Vertical or Horizontal position slider-->
+            <var name="allowfullscreen">true</var> <!--Zoom on click-->
         </var>
         <var name="magnifier">
-            <var name="enabled">true</var> <!-- Turn on/off magnifier (true/false) -->
+            <var name="enabled">true</var> <!--Zoom on hover mouse-->
         </var>
     </vars>
 </view>
