@@ -9,6 +9,36 @@
         @font-display: swap
     );
 
+    .lib-link(
+        @_link-color: @link__color,
+        @_link-text-decoration: @link__text-decoration,
+        @_link-color-visited: @link__visited__color,
+        @_link-text-decoration-visited: @link__visited__text-decoration,
+        @_link-color-hover: @link__hover__color,
+        @_link-text-decoration-hover: @link__hover__text-decoration,
+        @_link-color-active: @link__active__color,
+        @_link-text-decoration-active: @link__active__text-decoration
+    ) {
+        .lib-css(color, @_link-color);
+        .lib-css(text-decoration, @_link-text-decoration);
+
+        &:visited {
+            .lib-css(color, @_link-color-visited);
+            .lib-css(text-decoration, @_link-text-decoration-visited);
+        }
+
+        &:hover {
+            .lib-css(color, @_link-color-hover);
+            .lib-css(text-decoration, @_link-text-decoration-hover);
+        }
+
+        &:active {
+            .lib-css(color,@_link-color-active);
+            .lib-css(text-decoration, @_link-text-decoration-active);
+        }
+    }
+
+
 }
 
 //  Desktop
