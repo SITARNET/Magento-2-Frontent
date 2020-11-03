@@ -6,9 +6,16 @@
         <move element="page.main.title" destination="product.info.main" before="-"/>
         <move element="product.info.stock.sku" destination="product.info.main" after="page.main.title"/>
         <move element="product.info.review" destination="product.info.main" before="product.info.price"/>
+        <move element="product-promo-block" destination="product.info.main" after="product.info.price"/>
 
         <referenceContainer name="content">
-            <block name="promo_block" template="Magento_Catalog::product/view/promo.phtml" after="product.info.price"/>
+            <block name="product-promo-block" class="Magento\Cms\Block\Block" before="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        product-promo-block
+                    </argument>
+                </arguments>
+            </block>
         </referenceContainer>
 
         <attribute name="itemtype" value="http://schema.org/Product" />
