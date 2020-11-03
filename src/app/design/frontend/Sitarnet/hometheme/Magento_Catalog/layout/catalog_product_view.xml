@@ -8,7 +8,7 @@
         <move element="product.info.review" destination="product.info.main" before="product.info.price"/>
 
         <referenceContainer name="content">
-            <block name="product_promo_block" template="Magento_Catalog::product/view/promo.phtml" after="product.info.price"/>
+            <block name="promo_block" template="Magento_Catalog::product/view/promo.phtml" after="product.info.price"/>
         </referenceContainer>
 
         <attribute name="itemtype" value="http://schema.org/Product" />
