@@ -191,18 +191,18 @@
         .product-info-price {
             .lib-css(color, @product-info-price);
             border-bottom: 1px solid @color-gray-light5;
-            display: table;
+            display: compact;
             margin-bottom: @indent__s + @indent__xs;
             width: 100%;
 
             .price-box {
-                display: table-cell;
+                display: flex;
                 vertical-align: top;
                 width: 1px;
 
                 .price-container {
                     > span {
-                        display: block;
+                        display: flex;
                         margin-bottom: @indent__xs;
 
                         &:last-child {
@@ -233,6 +233,10 @@
                 .price-wrapper .price {
                     .lib-font-size(20);
                     font-weight: @font-weight__light;
+                    text-decoration: line-through;
+                    color: #747678;
+                    margin-left: 10px;
+                    margin-top: 5px;
                 }
             }
 
@@ -379,7 +383,7 @@
     .product-options-bottom .price-box,
     .product-info-price .price-box {
         .lib-css(color, @product-info-price);
-        display: table-cell;
+        display: compact;
         padding-bottom: @indent__s;
         vertical-align: top;
 
@@ -388,13 +392,13 @@
             font-weight: @font-weight__light;
 
             .price-container > span {
-                display: inline-block;
+                display: flex;
             }
         }
 
         .price-container {
             > span {
-                display: block;
+                display: flex;
                 margin-bottom: @indent__xs;
 
                 &:last-child {

@@ -23,10 +23,10 @@ $schema = ($block->getZone() == 'item_view') ? true : false;
     ?>
 </span>
 
-<?php if (!$block->isProductList() && $block->hasSpecialPrice()) : ?>
-    <span class="old-price sly-old-price no-display">
+<?php if ($block->hasSpecialPrice()): ?> <?php /**if (!$block->isProductList() && $block->hasSpecialPrice()) : **/ ?>
+    <span class="old-price sly-old-price"> <!--no-display-->
         <?= /* @noEscape */ $block->renderAmount($priceModel->getAmount(), [
-            'display_label'     => __('Regular Price'),
+            'display_label'     => __(''),
             'price_id'          => $block->getPriceId('old-price-' . $idSuffix),
             'price_type'        => 'oldPrice',
             'include_container' => true,
