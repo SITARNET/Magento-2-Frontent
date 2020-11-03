@@ -16,6 +16,7 @@
                     </argument>
                 </arguments>
             </block>
+            <block name="short_description" template="Magento_Catalog::product/view/short_description.phtml" before="-"/>
         </referenceContainer>
 
         <attribute name="itemtype" value="http://schema.org/Product" />
