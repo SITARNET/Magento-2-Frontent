@@ -7,6 +7,7 @@
         <move element="product.info.stock.sku" destination="product.info.main" after="page.main.title"/>
         <move element="product.info.review" destination="product.info.main" before="product.info.price"/>
         <move element="product-promo-block" destination="product.info.main" after="product.info.price"/>
+        <move element="short_description" destination="product.info.main" after="product-promo-block"/>
 
         <referenceContainer name="content">
             <block name="product-promo-block" class="Magento\Cms\Block\Block" before="-">
@@ -16,7 +17,7 @@
                     </argument>
                 </arguments>
             </block>
-            <block name="short_description" template="Magento_Catalog::product/view/short_description.phtml" before="-"/>
+            <block class="Magento\Catalog\Block\Product\View\Description" name="short_description" template="Magento_Catalog::product/view/short_description.phtml" />
         </referenceContainer>
 
         <attribute name="itemtype" value="http://schema.org/Product" />

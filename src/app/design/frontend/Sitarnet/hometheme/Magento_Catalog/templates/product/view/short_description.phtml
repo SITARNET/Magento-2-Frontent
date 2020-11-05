@@ -1,2 +1,5 @@
-<div class="short-description"> <?= $block->getShortDescription(); ?> </div>
 
+<div class="short-description"> <?= /* @noEscape */ $this->helper(Magento\Catalog\Helper\Output::class)->productAttribute(
+    $block->getProduct(),
+    $block->getProduct()->getDescription(),
+    'description') ?> </div>
