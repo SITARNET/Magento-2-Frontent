@@ -1,0 +1,75 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Magento\Catalog\Block\Product\View\Details $block */
+?>
+<?php if ($detailedInfoGroup = $block->getGroupSortedChildNames('detailed_info', 'getChildHtml')) :?>
+    <!--<div class="product info detailed">
+        <?php $layout = $block->getLayout(); ?>
+        <div class="product data items" data-mage-init='{"tabs":{"openedState":"active"}}'>
+            <?php foreach ($detailedInfoGroup as $name) :?>
+                <?php
+                $html = $layout->renderElement($name);
+                if (!trim($html)) {
+                    continue;
+                }
+                $alias = $layout->getElementAlias($name);
+                $label = $block->getChildData($alias, 'title');
+                ?>
+                <div class="data item title"
+                     data-role="collapsible" id="tab-label-<?= $block->escapeHtmlAttr($alias) ?>">
+                    <a class="data switch"
+                       tabindex="-1"
+                       data-toggle="trigger"
+                       href="#<?= $block->escapeUrl($alias) ?>"
+                       id="tab-label-<?= $block->escapeHtmlAttr($alias) ?>-title">
+                        <?= /* @noEscape */ $label ?>
+                    </a>
+                </div>
+                <div class="data item content"
+                     aria-labelledby="tab-label-<?= $block->escapeHtmlAttr($alias) ?>-title" id="<?= $block->escapeHtmlAttr($alias) ?>" data-role="content">
+                    <?= /* @noEscape */ $html ?>
+                </div>
+            <?php endforeach;?>
+        </div>
+    </div>-->
+
+    <div class="product info detailed" id="accordion" data-mage-init='{
+        "accordion":{
+            "active": [0],
+            "collapsible": true,
+            "openedState": "active",
+            "multipleCollapsible": false
+        }}'>
+
+        <hr>
+        <div class="data item title" data-role="collapsible">
+            <div data-role="trigger">
+                <a>Title 1</a>
+            </div>
+        </div>
+        <div data-role="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+        <hr>
+
+        <div class="data item title" data-role="collapsible">
+            <div data-role="trigger">
+                <a>Title 2</a>
+            </div>
+        </div>
+        <div data-role="content"> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        <hr>
+
+    </div>
+
+    <script>
+        require([
+            'jquery',
+            'accordion'], function ($) {
+            $("accordion").accordion();
+        });
+    </script>
+
+<?php endif; ?>

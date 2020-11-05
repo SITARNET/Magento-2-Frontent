@@ -178,6 +178,31 @@
     .product.info.detailed {
         clear: both;
         margin-bottom: 30px;
+        cursor: grab;
+
+        a {
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:after {
+            font-size: 14px;
+            line-height: inherit;
+            color: inherit;
+            content: '\e622';
+            font-family: 'luma-icons';
+            vertical-align: middle;
+            display: inline-block;
+            font-weight: 400;
+            overflow: hidden;
+            speak: none;
+            text-align: center;
+            position: absolute;
+            text-decoration: none;
+            }
+        a:visited *:after {
+            content: '\e621';
+        }
 
         .additional-attributes {
             width: auto;
