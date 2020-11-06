@@ -18,6 +18,7 @@
                 </arguments>
             </block>
             <block class="Magento\Catalog\Block\Product\View\Description" name="short_description" template="Magento_Catalog::product/view/short_description.phtml" />
+            <block name="love-block" template="Magento_Catalog::product/view/love.phtml" before="catalog.product.related"/>
         </referenceContainer>
 
         <attribute name="itemtype" value="http://schema.org/Product" />
