@@ -6,19 +6,20 @@
         <move element="page.main.title" destination="product.info.main" before="-"/>
         <move element="product.info.stock.sku" destination="product.info.main" after="page.main.title"/>
         <move element="product.info.review" destination="product.info.main" before="product.info.price"/>
-        <move element="product-promo-block" destination="product.info.main" after="product.info.price"/>
-        <move element="short_description" destination="product.info.main" after="product-promo-block"/>
+        <move element="product.promo.block" destination="product.info.main" after="product.info.price"/>
+        <move element="short.description" destination="product.info.main" after="product.promo.block"/>
 
         <referenceContainer name="content">
-            <block name="product-promo-block" class="Magento\Cms\Block\Block" before="-">
+            <block name="product.promo.block" class="Magento\Cms\Block\Block" before="-">
                 <arguments>
                     <argument name="block_id" xsi:type="string">
                         product-promo-block
                     </argument>
                 </arguments>
             </block>
-            <block class="Magento\Catalog\Block\Product\View\Description" name="short_description" template="Magento_Catalog::product/view/short_description.phtml" />
-            <block name="love-block" template="Magento_Catalog::product/view/love.phtml" before="catalog.product.related"/>
+            <block name="short.description" class="Magento\Catalog\Block\Product\View\Description" template="Magento_Catalog::product/view/short_description.phtml" />
+            <block name="love.block" template="Magento_Catalog::product/view/love.phtml" before="catalog.product.related"/>
+            <block name="get.yours.today" template="Magento_Catalog::product/view/get_yours_today.phtml" after="love.block"/>
         </referenceContainer>
 
         <attribute name="itemtype" value="http://schema.org/Product" />
