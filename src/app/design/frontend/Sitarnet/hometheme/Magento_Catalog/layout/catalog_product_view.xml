@@ -22,6 +22,10 @@
             <block name="get.yours.today" template="Magento_Catalog::product/view/get_yours_today.phtml" after="love.block"/>
         </referenceContainer>
 
+        <referenceContainer name="content">
+            <block name="size.modal" template="Magento_Catalog::product/view/size_modal.phtml" after="-"/>
+        </referenceContainer>
+
         <attribute name="itemtype" value="http://schema.org/Product" />
         <attribute name="itemscope" value="itemscope"/>
         <referenceBlock name="head.components">
