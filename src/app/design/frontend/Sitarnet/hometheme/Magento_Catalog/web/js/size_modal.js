@@ -10,6 +10,7 @@ define([
             config: {
                 type: 'popup',
                 responsive: true,
+                innerScroll: true,
                 buttons: [{
                     text: $.mage.__('CLOSE'),
                     class: '',

@@ -8,6 +8,7 @@
         <move element="product.info.review" destination="product.info.main" before="product.info.price"/>
         <move element="product.promo.block" destination="product.info.main" after="product.info.price"/>
         <move element="short.description" destination="product.info.main" after="product.promo.block"/>
+        <move element="size.modal" destination="product.info.main" after="short.description"/>
 
         <referenceContainer name="content">
             <block name="product.promo.block" class="Magento\Cms\Block\Block" before="-">
@@ -18,12 +19,9 @@
                 </arguments>
             </block>
             <block name="short.description" class="Magento\Catalog\Block\Product\View\Description" template="Magento_Catalog::product/view/short_description.phtml" />
+            <block name="size.modal" template="Magento_Catalog::product/view/size_modal.phtml" />
             <block name="love.block" template="Magento_Catalog::product/view/love.phtml" before="catalog.product.related"/>
             <block name="get.yours.today" template="Magento_Catalog::product/view/get_yours_today.phtml" after="love.block"/>
-        </referenceContainer>
-
-        <referenceContainer name="content">
-            <block name="size.modal" template="Magento_Catalog::product/view/size_modal.phtml" after="-"/>
         </referenceContainer>
 
         <attribute name="itemtype" value="http://schema.org/Product" />
