@@ -26,6 +26,7 @@
 
         <referenceContainer name="content.aside">
             <block name="rate.block" template="Magento_Catalog::product/view/rate.phtml" after="catalog.product.related"/>
+            <block name="review.block" class="Magento\Review\Block\Product\Review" template="Magento_Review::review.phtml" after="-"/>
         </referenceContainer>
 
         <attribute name="itemtype" value="http://schema.org/Product" />
