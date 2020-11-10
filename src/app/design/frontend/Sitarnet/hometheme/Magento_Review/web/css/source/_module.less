@@ -177,10 +177,11 @@
         }
 
         &-author {
-            display: inline;
+            display: block;
 
             .review-details-value {
-                font-weight: @font-weight__regular;
+                font-weight: @font-weight__bold;
+                font-size: @font-size__l;
             }
         }
 
@@ -198,7 +199,7 @@
         }
 
         &-content {
-            margin-bottom: @indent__base;
+            margin-bottom: @indent__xs;
         }
     }
 
@@ -222,19 +223,22 @@
         }
 
         &-ratings {
+            display: block;
             float: left;
             margin-bottom: 0;
             max-width: @review-ratings-left - @indent__xl;
         }
 
-        &-ratings ~ &-content,
-        &-ratings ~ &-details {
+        &-ratings ~ &-content {
             margin-left: @review-ratings-left;
+        }
+        &-ratings ~ &-details {
+            margin-left: 0;
         }
     }
 
     .review {
-        @reviews-indent-desktop: 30px;
+        @reviews-indent-desktop: 20px;
 
         &-toolbar {
             margin: 0 0 @reviews-indent-desktop;
