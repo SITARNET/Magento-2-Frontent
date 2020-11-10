@@ -25,7 +25,7 @@
         </referenceContainer>
 
         <referenceContainer name="content.aside">
-            <block name="rate.block" template="Magento_Catalog::product/view/rate.phtml" after="catalog.product.related"/>
+            <block name="rate.block" class="Magento\Catalog\Block\Product\AbstractProduct" template="Magento_Catalog::product/view/rate.phtml" after="catalog.product.related"/>
             <block name="review.block" class="Magento\Review\Block\Product\View\ListView" template="Magento_Review::product/view/list.phtml" after="-"/>
         </referenceContainer>
 

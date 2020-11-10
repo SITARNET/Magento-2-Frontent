@@ -1,7 +1,14 @@
+<?php
+
+use Magento\Catalog\ViewModel\Product\Listing\PreparePostData;
+use Magento\Framework\App\ActionInterface;
+
+?>
+
 <div class="rate_product_block">
     <div class="rate_product_title">Our Customers Rate Product</div>
     <div class="rate_product_stars">
-        <?= $this->getReviewsSummaryHtml($this->getProduct(), false, true); ?>
+        <?= $this->getReviewsSummaryHtml($this->getProduct(), false, false); ?>
     </div>
     <div class="rate_feefo_image">
         <img src="<?= $block->getViewFileUrl("images/feefo.webp"); ?>">

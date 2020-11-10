@@ -1,6 +1,7 @@
 define([
     "jquery",
     "Magento_Ui/js/modal/modal",
+    "tabs"
 ], function ($, modal) {
     'use strict';
 
@@ -19,6 +20,12 @@ define([
                     }
                 }]
             },
+            option: {
+                openedState: "active",
+                animate: {"duration": 100},
+                active: 1, "disabled": [2],
+                disabledState: "disabled"
+            }
         },
 
         _create: function () {
@@ -26,6 +33,8 @@ define([
             $('.size-modal').on('click', this.element, function () {
                 self.modalWindow();
             });
+
+            $(this.element).tabs({"mage/tabs": this.option.option});
         },
 
         modalWindow: function () {
