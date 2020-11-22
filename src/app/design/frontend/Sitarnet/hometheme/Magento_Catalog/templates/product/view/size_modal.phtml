@@ -11,7 +11,7 @@
                 </div>
                     <div id="tab_element">
                         <ul class="size-guide-chart-metric-switch">
-                            <li class="in active"><a href="#tab1_content"><span>Inches</span></a></li>
+                            <li class="in_active"><a href="#tab1_content"><span>Inches</span></a></li>
                             <li class="cm"><a href="#tab2_content"><span>Centimeters</span></a></li>
                         </ul>
                     </div>
@@ -126,16 +126,4 @@
         "sizeModal": {}
     }
 }
-</script>
-
-<script>
-    require(["jquery","mage/backend/tabs"], function($){
-        $(function() {
-            $('#tab_element').tabs({
-                active: 'in active',  // active tab elemtn id
-                destination: '#tab_element_content', // tab content destination element id
-                shadowTabs: []
-            });
-        });
-    });
 </script>

@@ -9,13 +9,16 @@
     display: none;
 }
 
-.pschart-showsizes {
-    .pschart-showsizes-82 {
-        display: block;
-    }
+.in_active li a span {
+    font-weight: 700;
+    background-color: #a9b089;
 }
 
+
 .pschart-showsizes {
+    &-82 {
+        display: block;
+    }
     .pschart-addedoverlay {
         left: 0;
         top: 0;
@@ -26,8 +29,10 @@
         background: #000;
         opacity: .75;
     }
-}
-.pschart-showsizes {
+    .pschart-content {
+        position: relative;
+        padding: 0;
+    }
     .pschart-popup {
         position: fixed;
         top: 0;
@@ -41,35 +46,19 @@
         padding: 15px;
         overflow-y: auto;
         text-align: center;
-    }
-}
-
-.pschart-showsizes {
-    .pschart-popup {
-        .pschart-popup-internal {
+        &-internal {
             max-width: 980px;
             display: block;
             margin-top: 5px;
+            .close {
+                font-size: 2rem;
+                background-color: #fff;
+                color: #252c26;
+                right: -4px;
+            }
         }
     }
 }
 
-.pschart-showsizes {
-    .pschart-content {
-        position: relative;
-        padding: 0;
-    }
-}
-
-.pschart-showsizes {
-    .pschart-popup {
-        .pschart-popup-internal .close {
-            font-size: 2rem;
-            background-color: #fff;
-            color: #252c26;
-            right: -4px;
-        }
-    }
-}
 
 

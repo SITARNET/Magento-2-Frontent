@@ -20,14 +20,16 @@
             </block>
             <block name="short.description" class="Magento\Catalog\Block\Product\View\Description" template="Magento_Catalog::product/view/short_description.phtml" />
             <block name="size.modal" template="Magento_Catalog::product/view/size_modal.phtml" />
-            <block name="love.block" template="Magento_Catalog::product/view/love.phtml" before="catalog.product.related"/>
-            <block name="get.yours.today" template="Magento_Catalog::product/view/get_yours_today.phtml" after="love.block"/>
+
         </referenceContainer>
 
         <referenceContainer name="content.aside">
+            <block name="get.yours.today" template="Magento_Catalog::product/view/get_yours_today.phtml" before="catalog.product.related"/>
             <block name="rate.block" class="Magento\Catalog\Block\Product\AbstractProduct" template="Magento_Catalog::product/view/rate.phtml" after="catalog.product.related"/>
             <block name="review.block" class="Magento\Review\Block\Product\View\ListView" template="Magento_Review::product/view/list.phtml" after="-"/>
         </referenceContainer>
+
+
 
         <attribute name="itemtype" value="http://schema.org/Product" />
         <attribute name="itemscope" value="itemscope"/>

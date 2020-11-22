@@ -20,12 +20,6 @@ define([
                     }
                 }]
             },
-            option: {
-                openedState: "active",
-                animate: {"duration": 100},
-                active: 1, "disabled": [2],
-                disabledState: "disabled"
-            }
         },
 
         _create: function () {
@@ -33,8 +27,6 @@ define([
             $('.size-modal').on('click', this.element, function () {
                 self.modalWindow();
             });
-
-            $(this.element).tabs({"mage/tabs": this.option.option});
         },
 
         modalWindow: function () {
@@ -44,6 +36,16 @@ define([
         },
     });
 
+    require(["jquery","mage/backend/tabs"], function($){
+        $(function() {
+            $('#tab_element').tabs({
+                active: 'in_active',  // active tab elemtn id
+                destination: '#tab_element_content', // tab content destination element id
+                shadowTabs: []
+            });
+        });
+    });
 
     return $.sitarnet.size_modal;
+
 });

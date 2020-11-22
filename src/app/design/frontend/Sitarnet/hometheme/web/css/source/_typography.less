@@ -1,8 +1,9 @@
 //  Common
 
 & when (@media-common = true) {
+
     .lib-font-face(
-        @family-name: 'roboto',
+        @family-name: @roboto_font,
         @font-path: '@{baseDir}fonts/roboto/roboto',
         @font-weight: 300,
         @font-style: normal,
@@ -10,7 +11,7 @@
     );
 
     .lib-font-face(
-        @family-name: 'iconmoon',
+        @family-name: @iconmoon_font,
         @font-path: '@{baseDir}fonts/iconmoon/iconmoon',
         @font-weight: 300,
         @font-style: normal,

@@ -48,7 +48,6 @@ if ($_attributeType && $_attributeType == 'text') {
 <?php if ($_attributeValue) :?>
 <div class="product attribute <?= $block->escapeHtmlAttr($_className) ?>">
     <?php if ($renderLabel) :?>
-        <!--<strong class="type"><?= $block->escapeHtml($_attributeLabel) ?></strong>--> <!--SKU:-->
         <strong class="type"><?= $block->escapeHtml($_attributeLabel) ?></strong>
     <?php endif; ?>
     <div class="value" <?= /* @noEscape */ $_attributeAddAttribute ?>><?= /* @noEscape */ $_attributeValue ?></div>
