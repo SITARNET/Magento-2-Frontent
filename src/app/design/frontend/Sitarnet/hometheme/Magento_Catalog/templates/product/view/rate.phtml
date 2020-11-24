@@ -5,12 +5,12 @@ use Magento\Framework\App\ActionInterface;
 
 ?>
 
-<div class="rate_product_block">
+<div class="rate_product">
     <div class="rate_product_title">Our Customers Rate Product</div>
     <div class="rate_product_stars">
         <?= $this->getReviewsSummaryHtml($this->getProduct(), false, false); ?>
     </div>
-    <div class="rate_feefo_image">
+    <div class="rate_product_image">
         <img src="<?= $block->getViewFileUrl("images/feefo.webp"); ?>">
     </div>
 </div>
