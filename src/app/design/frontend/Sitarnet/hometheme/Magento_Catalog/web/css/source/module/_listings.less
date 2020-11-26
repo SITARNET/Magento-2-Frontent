@@ -18,7 +18,7 @@
 @product-name-link__text-decoration__visited: @link__hover__text-decoration;
 
 @product-item__hover__background-color: @color-white;
-@product-item__hover__box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, .3);
+@product-item__hover__box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .3);
 
 @product-price__muted__color: @color-gray40;
 
@@ -128,6 +128,7 @@
 
             .price-box {
                 margin: @indent__s 0 @indent__m;
+                display: grid;
 
                 .price {
                     font-weight: @font-weight__bold;
@@ -142,6 +143,7 @@
 
             .old-price {
                 margin: @indent__xs 0;
+                text-decoration: line-through;
 
                 .price {
                     font-weight: normal;
@@ -171,7 +173,7 @@
 
             .tocompare {
                 .lib-icon-font-symbol(
-                @icon-compare-full
+                    @icon-compare-full
                 );
             }
 
@@ -323,7 +325,7 @@
     }
 
     .product-item-actions {
-        display: block;
+        display: none;
 
         .products-grid & {
             margin: -@indent__s 0 @indent__s;

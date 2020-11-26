@@ -1,73 +1,60 @@
-//
-//  Common
-//
+.size-modal {
+    display: block;
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 165px;
+}
 
-& when (@media-common = true) {
+.size_modal {
+    display: none;
+}
 
-    .size-modal {
+.in_active li a span {
+    font-weight: 700;
+    background-color: #a9b089;
+}
+
+
+.pschart-showsizes {
+    &-82 {
         display: block;
-        position: absolute;
-        padding-top: 40px;
-        padding-left: 165px;
     }
-
-    .size_modal {
-        display: none;
+    .pschart-addedoverlay {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 300;
+        background: #000;
+        opacity: .75;
     }
-
-    .table_size_cm table {
-        width: 80px;
+    .pschart-content {
+        position: relative;
+        padding: 0;
     }
-
-    .in_active li a span {
-        font-weight: 700;
-        background-color: #a9b089;
-    }
-
-    .pschart-showsizes {
-        &-82 {
+    .pschart-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1050;
+        width: 100%;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 15px;
+        overflow-y: auto;
+        text-align: center;
+        &-internal {
+            max-width: 980px;
             display: block;
-        }
-        .pschart-addedoverlay {
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            position: fixed;
-            z-index: 300;
-            background: #000;
-            opacity: .75;
-
-            &-content {
-                position: relative;
-                padding: 0;
-            }
-            &-popup {
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 1050;
-                width: 100%;
-                height: 100%;
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
-                padding: 15px;
-                overflow-y: auto;
-                text-align: center;
-
-                &-internal {
-                    max-width: 980px;
-                    display: block;
-                    margin-top: 5px;
-
-                    .close {
-                        font-size: 2rem;
-                        background-color: #fff;
-                        color: #252c26;
-                        right: -4px;
-                    }
-                }
+            margin-top: 5px;
+            .close {
+                font-size: 2rem;
+                background-color: #fff;
+                color: #252c26;
+                right: -4px;
             }
         }
     }
